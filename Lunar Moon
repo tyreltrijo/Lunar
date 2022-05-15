@@ -1,0 +1,96 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Lunar Moon", "Ocean")
+
+-- Credits
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+CreditsSection:NewLabel("Owner Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Co Owner Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Gui Maker Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Hub Maker Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Credits Maker Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Main Maker Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Ui Library used Of The Script Of The Script: Kavo Ui")
+CreditsSection:NewLabel("Programmer Of The Script: tyrelbro#9012")
+CreditsSection:NewLabel("Extension Used For The Script Of The Script: Lua")
+CreditsSection:NewLabel("Admin Commands Maker Of The Script: tyrelbro#9012")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+MainSection:NewSlider("Toggle WalkSpeed", "Toggles WalkSpeed", 250, 16, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MainSection:NewSlider("Toggle JumpPower", "Toggles JumpPower", 250, 50, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+-- Other Guis
+local Guis = Window:NewTab("Guis")
+local GuisSection = Guis:NewSection("Guis")
+GuisSection:NewButton("Murder Mystery Gui", "Mm2 Gui", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
+end)
+
+GuisSection:NewButton("Clicker Simulator Gui", "Clicker Simulator Gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
+end)
+
+GuisSection:NewButton("Bedwars Gui", "Bedwars Gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+GuisSection:NewButton("Ninja Legends Gui", "Ninja Legends Gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HydraVirgo/ninjalegendsfreegui/main/obfusc", true))()
+end)
+
+GuisSection:NewButton("Shindo Life Gui", "Shindo Life Gui", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+GuisSection:NewButton("Legends Of Speed Gui", "Ninja Legends Gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tyreltrijo/Speed-Legends/main/Speed%20Legends"))()
+end)
+
+GuisSection:NewButton("Bloxfruits Gui", "Bloxfruits Gui", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+GuisSection:NewButton("Arsenal Gui", "Arsenal Gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+end)
+
+GuisSection:NewButton("Fly Gui", "Fly Gui", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/Fly/main/Fly%20Gui'))()
+end)
+
+-- Hubs
+local Hubs = Window:NewTab("Hubs")
+local HubsSection = Hubs:NewSection("Other Hubs")
+HubsSection:NewButton("Vhub", "Vhub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
+end)
+
+HubsSection:NewButton("Cryptonic Hub Ragdoll Engine", "Cryptonic Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+end)
+
+HubsSection:NewButton("Ez Hub", "Ez Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+-- Fe Scripts
+local Fe_Scripts = Window:NewTab("Fe Scripts")
+local Fe_ScriptsSection = Fe_Scripts:NewSection("Fe Scripts")
+Fe_ScriptsSection:NewButton("Use This Netless Before Fe Scripts", "Netless", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
+end)
+
+Fe_ScriptsSection:NewButton("Among Us No Hats Need", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/Amogus/main/Among%20Us'))()
+end)
+
+Fe_ScriptsSection:NewButton("Hat Universe Any Hats", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/Hat/main/HatUniverse'))()
+end)
